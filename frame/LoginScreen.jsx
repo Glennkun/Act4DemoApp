@@ -28,7 +28,7 @@ export default function LoginScreen() {
       alert('Login successful!');
       navigation.navigate('Home');
     } else {
-      // Replace 'http://your-localhost-url-here' with your actual local URL
+    
       openWebPage('https://images.pexels.com/photos/14440674/pexels-photo-14440674.jpeg');
     }
   };
@@ -44,7 +44,7 @@ export default function LoginScreen() {
   };
 
   const handleForgotPassword = () => {
-    // You can replace this with any custom functionality
+  
     alert('Alert');
   };
 

@@ -11,7 +11,7 @@ import {
   SectionList,
   FlatList,
   KeyboardAvoidingView,
-  ScrollView, // Import ScrollView
+  ScrollView,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
@@ -43,7 +43,7 @@ export default function RegistrationScreen() {
     }
   };
 
-  // Sample data for the FlatList
+  
   const flatListData = [
     { key: 'Item 1' },
     { key: 'Item 2' },
@@ -52,7 +52,7 @@ export default function RegistrationScreen() {
     { key: 'Item 5' },
   ];
 
-  // Sample data for the SectionList
+  
   const sectionData = [
     {
       title: 'Section 1',
@@ -79,10 +79,10 @@ export default function RegistrationScreen() {
             {isAdditionalInfoVisible && (
               <View>
                 <Text>Additional Information:</Text>
-                {/* Additional input fields or components can be placed here */}
+                
                 <TextInput style={styles.input} placeholder="Additional Input 1" />
                 <TextInput style={styles.input} placeholder="Additional Input 2" />
-                <Button title="Additional Action" onPress={() => { /* Additional action logic */ }} />
+                <Button title="Additional Action" onPress={() => { }} />
               </View>
             )}
           </View>
@@ -106,13 +106,13 @@ export default function RegistrationScreen() {
           <TouchableOpacity
             style={styles.touchableOpacity}
             onPress={() => {
-              // Action to be performed on TouchableOpacity press
+          
             }}
           >
             <Text>Touchable Component</Text>
           </TouchableOpacity>
 
-          {/* SectionList Component */}
+        
           <SectionList
             sections={sectionData}
             keyExtractor={(item, index) => item + index}
@@ -124,7 +124,7 @@ export default function RegistrationScreen() {
             )}
           />
 
-          {/* FlatList Component */}
+        
           <FlatList
             data={flatListData}
             renderItem={({ item }) => (
